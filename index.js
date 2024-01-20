@@ -21,7 +21,7 @@ const corsOptions = {
     origin: CORS_ORIGIN,
     optionsSuccessStatus: 200,
 };
-app.use((0, cors_1.default)(corsOptions));
+app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 // Load the routes
 app.use("/usuarios", Rutas_Usuario_1.default);
